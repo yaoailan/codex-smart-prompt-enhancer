@@ -1,0 +1,25 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run PowerShell tests
+        shell: powershell
+        run: |
+          .\tests\test-state.ps1
+          .\tests\test-install.ps1
+
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Bash tests
+        run: |
+          bash ./tests/test-state.sh
+          bash ./tests/test-install.sh

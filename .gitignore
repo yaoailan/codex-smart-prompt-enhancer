@@ -1,0 +1,6 @@
+state.json
+.state-*.tmp
+AGENTS.md.backup-*
+*.log
+.DS_Store
+__pycache__/
