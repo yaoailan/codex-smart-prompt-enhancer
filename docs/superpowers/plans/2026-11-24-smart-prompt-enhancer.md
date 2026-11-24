@@ -169,5 +169,5 @@
 - [x] README、PRIVACY、LICENSE 完成
 - [x] 本地安装和官方校验通过
 - [x] 全局规则已备份并追加
-- [ ] Git 提交完成
-- [ ] GitHub 公开仓库可访问
+- [x] Git 提交完成
+- [x] GitHub 公开仓库可访问
